@@ -1,0 +1,20 @@
+I want a JSON transcript of the provided podcast audio.
+The audio may contain ads.
+The transcript should include speaker diarization and timestamps.
+I provided you with the original transcript text without ads. I need to use the audio and the original transcript to generate the final JSON transcript, ensuring the ads from the audio are transcribed and included, and the speaker labels and timestamps align correctly with the audio.
+
+Here's the plan:
+
+1. Process the audio to generate an initial transcript with timestamps and speaker labels.
+
+2. Compare the generated transcript with the provided original transcript text.
+
+3. Identify the sections in the generated transcript that correspond to ads. These sections will not be present in the original transcript.
+
+3. Ensure the speaker labels match the names provided in the original transcript (Brittany Luse, Lily Hu, Miles Klee, Liam McBain, Neena Pathak, Barton Girdwood, Veralyn Williams, Yolanda Sangweni). I'll also look for potential ad narrators.
+
+4. Refine the timestamps and speaker labels based on both the audio and the provided original transcript structure.
+
+5. Merge the ad sections (from the generated transcript) back into the main transcript, ensuring correct timestamps.
+
+6. Format the final output as a JSON array of objects, where each object contains speaker, timestamp, and text.

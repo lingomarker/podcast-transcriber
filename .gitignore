@@ -7,6 +7,7 @@
 *.dll
 *.so
 *.dylib
+__debug_bin*
 
 # Test binary, built with `go test -c`
 *.test
@@ -23,3 +24,13 @@ go.work.sum
 
 # env file
 .env
+
+# config file
+config.json
+
+# database
+podcast_transcripts.db
+
+# uploaded files
+uploads
+
